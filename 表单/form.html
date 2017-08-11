@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="./css/form.css">
+		<script src="./js/form.js"></script>
+		<title>login</title>
+	</head>
+
+	<body onload="load()">
+		<div id="form-basic">
+			<div class="word">
+				<span>用 户 名</span><br />
+				<span>密　　码</span><br />
+				<span>确认密码</span><br />
+				<span>性　　别</span><br />
+				<span>邮　　箱</span><br />
+				<span>电　　话</span><br />
+			</div>
+			<form id="basic" method="post" action="http://localhost/test.asp" novalidate onsubmit="return CheckBasic();">
+				<fieldset>
+				<legend></legend>
+					<input type="text"      name="Uname" id="Uname"          class="textBox" required autocomplete="off"><br />
+					<input type="password"  name="Pwd"   id="Pwd"            class="textBox" required><br />
+					<input type="password"               id="Pwd-confirm"    class="textBox" required><br />
+                    <div class="RadioBox">
+                        <input type="radio" name="Sex" id="Sex-m" class="radio" value="male" required>男
+                    </div>
+                    <div class="RadioBox">
+                        <input type="radio" name="Sex" id="Sex-f" class="radio" value="female" required>女
+                    </div><br />
+					<input type="email"		name="Mail"	 id="Mail"			 class="textBox" required><br />
+					<input type="text"		name="Phone" id="Phone"			 class="textBox" required pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$">
+				</fieldset>	<input type="submit" form="basic" class="submit" value="立刻注册" >
+			</form>
+			<input type="button" class="submit" value="完善信息" style="left:10%;" onclick="document.getElementById('form-basic').style.display='none';document.getElementById('form-more').style.display='block';">
+		</div>
+		<!-- <button type="submit" form="basic" class="submit" value="立刻注册" >立刻注册</button> -->
+		<div id="form-more">
+			<div class="word">
+				<span>住址</span><br />
+				<span>生日</span><br />
+				<span>兴趣爱好</span><br />
+				<span>个人主页</span><br />
+			</div>
+				<form id="more" method="post" action="http://localhost/test.asp">
+					<fieldset>
+					<legend></legend>
+						<select name="Province" id="Province" class="SelectBox">
+						    <option>--请选择--</option>
+						</select>
+						<select name="City" id="City" class="SelectBox">
+							<option>--请选择--</option>
+						</select>
+						<select name="Town" id="Town" class="SelectBox">
+							<option>--请选择--</option>
+						</select><br />												
+						<input type="date"		name="Birth" 	id="Birth"		 class="DateBox"><br />
+						<input type="checkbox"	name="Interest" id="Interest"	 class="CheckBox">
+						<input type="checkbox"	name="Interest" id="Interest"	 class="CheckBox">
+						<input type="checkbox"	name="Interest" id="Interest"	 class="CheckBox"><br />
+						<input type="checkbox"	name="Interest" id="Interest"	 class="CheckBox">
+						<input type="checkbox"	name="Interest" id="Interest"	 class="CheckBox">
+						<input type="checkbox"	name="Interest" id="Interest"	 class="CheckBox"><br />
+						<input type="url"		name="HomePage" id="HomePage"	 class="textBox">
+					</fieldset><input form="more" type="submit" class="submit" value="立刻注册">	
+				</form>
+		</div>	
+		
+	</body>
+
+</html>	

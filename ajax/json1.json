@@ -1,0 +1,129 @@
+{
+  "error": false,
+  "verify": false,
+  "redirect": false,
+  "ok": true,
+  "timecost": 31,
+  "code": 200,
+  "messages": {
+    "serverTime": "2017-08-09T15:28:14+0800",
+    "data": {
+      "alreadyLike": false,
+      "alreadyBookmarked": false,
+      "relativeVideos": [
+        {
+          "tags": "C罗,梅西,趣味,基友",
+          "summary": "场上默契高，场下关系好，这样的球员谁不爱？让我们细数下绿茵场上的好基友吧~",
+          "bookmarkCount": 1,
+          "likeCount": 3,
+          "status": 0,
+          "commentCount": 1,
+          "url": "http:\/\/vod.banmabang.cn\/20170717173935039_360_20170717173935.mp4",
+          "id": "4841&bm_TV&0",
+          "subTitle": "让我们细数下绿茵场上的好基友",
+          "title": "绿茵场上的那些好基友，看着都”幸福“",
+          "duration": "03:27",
+          "category": 3,
+          "createUser": "passport_2218386",
+          "objType": "bm_TV",
+          "videoId": "4841",
+          "name": "绿茵场上的那些好基友，看着都”幸福“",
+          "similarity": 2,
+          "poster": "FpFNJyFCuSzjNlMTe1SLbCtuwyZN",
+          "objId": "0",
+          "pvCount": 1070
+        },
+        {
+          "tags": "过人,C罗,油杂丸子,V形拉球",
+          "summary": "这种过人比较复杂，但绝对受用，v形拉球与油杂丸子的结合体。",
+          "bookmarkCount": 25,
+          "likeCount": 5,
+          "status": 0,
+          "commentCount": 1,
+          "url": "http:\/\/vod.banmabang.cn\/20170719165242052_360_20170719165242.mp4",
+          "id": "4851&bm_TV&0",
+          "subTitle": "一分钟教会你C罗标志性过人，让你成为野球场上的过人王",
+          "title": "拉球油炸丸子  过人",
+          "duration": "01:28",
+          "category": 1,
+          "createUser": "passport_2218383",
+          "objType": "bm_TV",
+          "videoId": "4851",
+          "name": "拉球油炸丸子  过人",
+          "similarity": 2,
+          "poster": "FhvPNrRUmb_9XfeW9NDiV96s6dnp",
+          "objId": "0",
+          "pvCount": 1452
+        }
+      ],
+      "ads": [
+        {
+          "aoId": "350",
+          "clickCount": 1,
+          "status": 0,
+          "browserType": "inApp",
+          "endDate": "2027-08-08T17:38:00+0800",
+          "type": "url",
+          "beginDate": "2017-08-08T17:38:00+0800",
+          "updateDate": "2017-08-09T12:19:14+0800",
+          "url": "https:\/\/h5.youzan.com\/v2\/feature\/19ebt7nxp",
+          "id": "349",
+          "createUser": "passport_2269441",
+          "title": "fc8.8",
+          "linkId": "",
+          "flag": 1,
+          "seq": 1,
+          "poster": "FtVnci1BKomW2-wrgVCdknRxBDPk",
+          "subtitle": "",
+          "createDate": "2017-08-08T17:39:56+0800",
+          "updateUser": "passport_2269441"
+        }
+      ],
+      "video": {
+        "summary": "总裁的儿子依旧很帅，阿扎尔的儿子实力被爹坑~~明日之星会是谁？",
+        "sliderAvailable": 0,
+        "scope": "",
+        "likeCount": 3,
+        "type": "",
+        "teamId": "",
+        "titleLong": "总裁的儿子依旧很帅，阿扎尔的儿子实力被爹坑~~",
+        "id": "4939&bm_TV&0",
+        "author": "",
+        "subTitle": "明日之星会是谁？",
+        "title": "总裁的儿子依旧很帅，阿扎尔的儿子实力被爹坑~~",
+        "createUserInfo": {
+          "id": "passport_2218390",
+          "deviceTokens": [
+            {
+              "deviceToken": "79e236d4410e848fb7c72314deb7e4b2c2da85045baa5e31e05e80d8c9af1607",
+              "deviceType": "iphone"
+            }
+          ],
+          "nickName": "绿茵技巧秀",
+          "originalNickName": "绿茵技巧秀",
+          "avatar": "FshscnXQZcp4Un_jS5jBdqjTSL8a"
+        },
+        "objType": "bm_TV",
+        "pool": 1,
+        "videoId": "4939",
+        "objId": "0",
+        "pvCount": 742,
+        "createDate": "2017-08-08T17:38:03+0800",
+        "tags": "C罗,过人,趣味,孩子",
+        "bookmarkCount": 1,
+        "status": 0,
+        "extTag": "",
+        "gameId": "",
+        "commentCount": 1,
+        "url": "http:\/\/vod.banmabang.cn\/20170808173120031_360_20170808173121.mp4",
+        "updateDate": "2017-08-09T15:06:50+0800",
+        "duration": "02:51",
+        "createUser": "passport_2218390",
+        "category": 3,
+        "poster": "Fk-mvHKFVPTynwXZhzzqfpeYBLoI",
+        "seq": 0,
+        "updateUser": ""
+      }
+    }
+  }
+}

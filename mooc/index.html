@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href=".\index.css">
+		<link rel="stylesheet" type="text/css" href=".\test.css">
+		<script src="index.js"></script>
+		<!--阿里图标begin-->
+	    <script src="./font/iconfont.js"></script>
+	    <style type="text/css">
+	        .icon {
+	            width: 1em;
+	            height: 1em;
+	            vertical-align: -0.15em;
+	            fill: currentColor;
+	            overflow: hidden;
+	        }
+	    </style>
+    	<!--阿里图标end-->
+		<title>中国大学MOOC(慕课)_最好的在线学习平台</title>	
+	</head>
+	<body onload="load()">
+		<div id="mask" onclick="Hide()"></div>
+		<!--总弹窗登录界面begin-->
+	    <div id="login" class="login">
+
+	    	<!--选项卡begin-->
+	        <div id="menu">
+	            <div id="tab1" onclick="ChangeTAB(1, 2)" class="tb-active">使用网易邮箱账号登录</div>
+	            <div id="tab2" onclick="ChangeTAB(2, 1)" class="">使用爱课程网账号登录</div>
+	        </div>
+			<!--选项卡 end-->
+
+			<!--第三方登录 begin-->
+	        <div id="be">
+	            <a href="javascript:void(0)" onclick="Hide()">x</a>
+	            <br />
+	            <span style="margin:16px 0 33px 0px;font-size:13px;display:block;">使用第三方账号登录</span>
+	            <p>
+	                <svg class="icon" aria-hidden="true">
+	                  <use xlink:href="#icon-mountains__easyiconnet"></use>
+	                 </svg>
+	            </p>
+	            <p>
+	                <svg class="icon" aria-hidden="true">
+	                    <use xlink:href="#icon-map__easyiconnet"></use>
+	                </svg>
+	            </p>
+	            <p>
+	                <svg class="icon" aria-hidden="true">
+	                    <use xlink:href="#icon-parachute__easyiconnet"></use>
+	                </svg>
+	            </p>
+	            <p>
+	                <svg class="icon" aria-hidden="true">
+	                    <use xlink:href="#icon-mountain__easyiconnet"></use>
+	                </svg>
+	            </p>
+	        </div>
+	        <!--第三方登录 end-->
+
+	        <!--表单 begin-->
+	        <div id="fom">
+	        	<!--表单1-->
+	            <div id="fom1">
+	                <div id="fom1-icon"></div>
+	                <form method="post" action="http://localhost/test.asp" >
+	                    <div id="fom1-uname">
+	                        <div id="fom1-uname-icon"></div>
+	                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="HAHA(this)" class="input-text" name="Uname" required="required" placeholder="常用邮箱或网易邮箱" oninput="showX(this)" onfocus="setfocus('fom1-uname')" onblur="clearfocus('fom1-uname')">
+	                        <div id="fom1-uname-clear" onclick="document.getElementById('fom1-uname-clear').previousElementSibling.value=''"></div>
+	                        <div style="clear:both"></div>
+	                    </div>
+	                    <br />
+	                    <div id="fom1-pwd">
+	                        <div id="fom1-pwd-icon" style="background-position:-291px -86px;"></div>
+	                        <input type="password" required="required" class="input-text" name="pwd" placeholder="密码" oninput="showX(this)" onfocus="setfocus('fom1-pwd')" onblur="clearfocus('fom1-pwd')">
+	                        <div id="fom1-pwd-clear" onclick="document.getElementById('fom1-pwd-clear').previousElementSibling.value=''"></div>
+	                        <div style="clear:both"></div>
+	                    </div>
+	                    <br />
+	                    <input class="submit" type="submit" value="登录">
+	                    <br />
+	                    <div id="fom1-items">
+	                        <div style="float:left">
+	                            <input type="checkbox">
+	                            十天之内免登录
+	                            <span>|</span>
+	                            <a href="javascript:void(0)">忘记密码?</a>
+	                        </div>
+	                        <a href="javascript:void(0)" style="float:right">去注册</a>
+	                    </div>
+	                </form>
+	            </div>
+				<!--表单2 begin-->
+	            <div id="fom2">
+	                <form method="post" action="http://localhost/test.asp">
+	                    <input type="text" name="Uname" placeholder="用户名">
+	                    <br />
+	                    <input type="password" name="pwd" placeholder="密码">
+	                    <br />
+	                    <input type="submit" value="登录">
+	                </form>
+	            </div>
+	        </div>
+	        <!--表单 end-->
+	    </div>
+		<!--总弹窗登录界面end-->
+
+		<!--固定导航栏begin-->
+		<div class="m-fixed-navi">
+			<img src=".\img\mooc-fixed.png" alt="mooc" style="float:left;vertical-align: middle;position:relative;top:8px"/>
+			<ul class="m3-head-ul" style="top:0px">
+				<li><a href="javascript:void(0)">课程</a></li>
+				<li><a href="javascript:void(0)">名校</a></li>
+				<li><a href="javascript:void(0)">学 · 问</a></li>
+				<li><a href="javascript:void(0)">学校云</a></li>
+				<li><a href="javascript:void(0)">考研</a><span>新</span></li>
+			</ul>
+			<div class="m3-head-top-right">
+				<img src=".\img\phone-fixed.png">
+				<span id="kehuduan">客户端</span>
+				<input id="search-text" type="text" placeholder="搜索感兴趣的课程">
+				<span id="search" class="search"></span>
+				<a href="javascript:void(0)" class="loginbt">登录 <span style="color:white;">|</span> 注册</a>
+			</div>
+		</div>
+		<!--固定导航栏end-->
+
+		<!--固定按钮begin-->
+		<div class = "m-fixed-bt">
+			<div class="mf-bt-sign">签到</div>
+			<div class="mf-bt-feedback">反馈意见</div>
+			<div class="mf-bt-mobile">手机课堂</div>
+			<div class="mf-bt-top" id="mf-bt-top"><a href="#" style="text-decoration: none;color:black;">返回顶部</a></div>
+		</div>
+		<!--固定按钮end-->
+
+		<!--头部导航栏begin-->
+		<div class="m-head">
+			<div class="m2-head-top">
+				<img src=".\img\mooc.png" alt="mooc"/>
+				<div class="m3-head-top-right">
+					<img src=".\img\phone.png">
+					<div id="BOX">
+						<span id="kehuduan">客户端</span>
+						<div class="outBox">
+							<div></div>
+						</div>
+					</div>
+					<input id="search-text" type="text" placeholder="搜索感兴趣的课程">
+					<span id="search" class="search"></span>
+					<a href="javascript:void(0)" class="loginbt">登录 <span>|</span> 注册</a>
+				</div>
+			</div>
+			<div class="m2-head-bottom">
+				<ul class="m3-head-ul">
+					<li><a href="javascript:void(0)">课程</a></li>
+					<li><a href="javascript:void(0)">名校</a></li>
+					<li><a href="javascript:void(0)">学 · 问</a></li>
+					<li><a href="javascript:void(0)">学校云</a></li>
+					<li><a href="javascript:void(0)">考研</a><span>新</span></li>
+				</ul>
+				<span class="m3-moreclass">更多课程频道</span>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<!--头部导航栏end-->
+
+		<!--幻灯片begin-->
+		<div class="m-pic">
+			<div class="m2-menu">
+				<ul class="m2-menu1">
+					<li>计算机</li>
+					<li>经济管理</li>
+					<li>心理学</li>
+					<li>外语</li>
+					<li>文学历史</li>
+					<li>艺术设计</li>
+					<li>工学</li>
+					<li>理学</li>
+					<li id="m2-menu1-more">更多</li>					
+				</ul>
+				<div class="menu2-mask">
+					<ul class="m2-menu2">
+						<li style="width:330px;">生命科学</li>
+						<li>哲学</li>
+						<li>法学</li>
+						<li>教育教学</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="m2-pic">
+				<div class="m2-pic-div">
+					<div class="m2-pic-button-left" id="m2-pic-button-left"><</div>
+					<div class="m2-pic-button-right" id="m2-pic-button-right">></div>
+					<div class="m2-pic-button-bottom">
+						<div id="mpbb-1" class="mpbb"></div>
+						<div id="mpbb-2" class="mpbb"></div>
+						<div id="mpbb-3" class="mpbb"></div>
+						<div id="mpbb-4" class="mpbb"></div>
+						<div id="mpbb-5" class="mpbb"></div>
+						<div style="clear:both"></div>
+					</div>
+					<a href="javascrcipt:void(0)" id="m2-pic-a">
+						<img src="./img/pic1.jpg" id="m2-pic-img"/>
+					</a>
+				</div>
+				<div class="pic-fix-login">
+					<p>免费学习名校名师的精品课程</p>
+					<img src=".\img\s_man.png">
+					<a href="javascript:void(0)" onclick="Show()">登录</a>
+					<span>网易和高等教育出版社</span>
+				</div>
+			</div>
+		</div>
+		<!--幻灯片end-->		
+
+		<!--合作学校begin-->
+		<div class="m-school">
+			<a href="javascript:void(0)">全部<span>139</span>所合作高校</a>
+			<img src=".\img\北京大学.png">
+			<img src=".\img\浙江大学.png">
+			<img src=".\img\南京大学.png">
+			<img src=".\img\武汉大学.png">
+			<img src=".\img\哈工大.png">
+		</div>
+		<!--合作学校end-->
+
+		<!--推荐课程begin-->
+		<div class="m-course">
+			<h2>推荐课程</h2>
+			<div>
+				<div class="rec-class">
+					<div class="rec-class-img">
+						<img class="rec-class-img" src="./img/rc1.jpg" />
+					</div>
+					<h6 class="rec-class-name">园艺概论</h6>
+					<h7 class="rec-class-going">课程已进行7周</h7>
+					<span class="rec-class-school">华中农业大学</span>
+					<span class="rec-class-num">9891</span>
+					<cite class="rec-class-info">827364871</cite> 
+				</div>
+				<div class="rec-class">
+					<div class="rec-class-img">
+						<img class="rec-class-img" src="./img/rc2.jpg" />
+					</div>
+					<h6 class="rec-class-name">英美诗歌名篇选读</h6>
+					<h7 class="rec-class-going">课程已进行7周</h7>
+					<span class="rec-class-school">北京联合大学</span>
+					<span class="rec-class-num">28623</span>
+					<cite class="rec-class-info">827364871</cite>
+				</div> 
+				<div class="rec-class">
+					<div class="rec-class-img">
+						<img class="rec-class-img" src="./img/rc3.jpg" />
+					</div>
+					<h6 class="rec-class-name">中国古代建筑艺术</h6>
+					<h7 class="rec-class-going">课程已进行7周</h7>
+					<span class="rec-class-school">湖南大学</span>
+					<span class="rec-class-num">19991</span>
+					<cite class="rec-class-info">827364871</cite>
+				</div> 
+				<div class="rec-class">
+					<div class="rec-class-img">
+						<img class="rec-class-img" src="./img/rc4.jpg" />
+					</div>
+					<h6 class="rec-class-name">文学经典导读</h6>
+					<h7 class="rec-class-over">已结束，可查看内容</h7>
+					<span class="rec-class-school">东北师范大学</span>
+					<span class="rec-class-num">24359</span>
+					<cite class="rec-class-info">827364871</cite>
+				</div> 
+				<div class="rec-class">
+					<div class="rec-class-img">
+						<img class="rec-class-img" src="./img/rc5.jpg" />
+					</div>
+					<h6 class="rec-class-name">美国文化</h6>
+					<h7 class="rec-class-going">课程已进行7周</h7>
+					<span class="rec-class-school">四川大学</span>
+					<span class="rec-class-num">37203</span>
+					<cite class="rec-class-info">827364871</cite>
+				</div>
+			</div>
+		</div>
+		<!--推荐课程end-->
+	</body>
+</html>

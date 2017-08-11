@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./css/ajax.css" type="text/css" />
+        <script src="./js/ajax.js"></script>
+        <title>AJAX</title>
+    </head>
+    <body>
+        <div style="display:none" id="storage">
+        	<video controls style="visibility:hidden"></video>
+            <h1 class="title"></h1>
+            <h4 class="subtitle"></h4>
+            <lable class="like" title="赞"></lable>
+            <lable class="favor" title="收藏"></lable>
+            
+        </div>
+        <div id="menu">
+            <input type="number" placeholder="视频ID">
+            <button onclick="loadXml(this.previousElementSibling.value)">加载</button>
+        </div>
+        <div id="container">
+		    <div id="content">
+		    </div>
+	        <div id="relatives">
+		        	
+	        </div>
+        </div>
+    </body>
+</html>

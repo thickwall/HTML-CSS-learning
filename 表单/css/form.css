@@ -1,0 +1,95 @@
+body{
+	padding:0;
+    font-family:'Microsoft YaHei';
+}
+#form-basic, #form-more{
+	position:fixed;
+	left:50%;
+	margin-left:-400px;
+	width:800px;
+	/*text-align:center;*/
+	border:1px solid gray;
+	box-shadow:rgba(0, 0, 0, 0.3) 0px 2px 8px;
+}
+#form-basic{
+	/*display:none;*/
+}
+#form-more{
+	display:none;
+}
+.textBox, .DateBox{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.SelectBox{
+	display:inline-block;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.RadioBox{
+    display:inline-block;
+    margin:8px;
+    text-align:center;
+    width:60px;
+    height:22px;
+    border:1px ridge;
+    cursor:pointer;
+    background-color:salmon;
+}
+.radio{
+    vertical-align:middle;
+	/*margin-top:10px;
+	margin-bottom:10px;*/
+	height:21px;
+	width:0px;
+}
+.word{
+	/*font-size:1.5em;*/
+	/*position:absolute;*/
+	float:left;
+	width:300px;
+	text-align:right;
+	line-height:41px;
+}
+.word:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.word span{
+	padding:0;
+	margin:0;
+}
+fieldset{
+	border:none;
+	padding:0;
+}
+.submit{
+	position:absolute;
+	top:80%;
+	left:80%;
+	width:80px;
+	height:80px;
+	z-index:4;
+	border-radius:50%;
+	border-style:none;
+	background-color:#22bbfa;
+	box-shadow:rgba(0, 0, 0, 0.3) 0px 2px 8px;
+}
+.submit:hover{
+    transform:rotate(360deg);
+	transition:2s box-shadow,1s transform;
+	box-shadow: none;
+}
+.submit:active, .submit:focus{
+	outline: none;
+}
+
+.info-error{
+	color:red;
+	font-size:13px;
+}
+.info-warning{
+	color:orange;
+	font-size:13px;
+}

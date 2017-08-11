@@ -1,0 +1,409 @@
+﻿body {
+	padding:0;
+	margin:0;
+}
+/* 主结构begin */
+.m-fixed-navi{
+	position:fixed;
+	color:white;
+	height:50px;
+	line-height:50px;
+	width:100%;
+	top:0;
+	background-color:black;
+	z-index:2;
+	/*opacity:0.85;*/
+	visibility: hidden;
+}
+.m-head{
+	height:106px;
+/*	overflow:hidden;*/
+}
+.m-pic{
+/*	position:relative;*/
+	height:380px;
+}
+.m-school{
+	line-height:60px;
+	height:60px;
+}
+.m-course{
+	background-color:#eee;
+	height:421px;
+}
+.m-fixed-bt{
+	position:fixed;
+	width:40px;
+	height:200px;
+	z-index:2;
+	right: 15px;
+	bottom: 30px;
+}
+/* 主结构end */
+/* 二级结构begin*/
+.m2-head-top{
+	margin:10px 0;
+	height:40px;
+	line-height:40px;
+}
+.m2-head-bottom{
+
+}
+
+.m2-menu{
+	float:left;
+	width:200px;
+	height:380px;
+	background-color:black;
+	margin-right:-200px;
+	opacity:0.85;
+	position:relative;/*为了让菜单相对这个div定位*/
+}
+.m2-pic{
+	margin-left:200px;
+	height:380px;
+	position:relative;/*为了让悬浮窗相对这个div定位*/
+}
+/* 二级结构end*/
+
+/*固定按钮begin*/
+.m-fixed-bt div{
+	font-family:微软雅黑, "Microsoft YaHei";
+	
+	
+}
+.mf-bt-sign{
+	background:rgba(85, 185, 40, 1);
+	color:white;
+	text-align:center;
+	font-size:1.3em;
+	height:52px;
+	margin-bottom:20px;
+	border:none;
+	border:0.5px solid gray;
+}
+.mf-bt-mobile, .mf-bt-feedback, .mf-bt-top{
+	text-align:center;
+	height:40px;
+	margin:1px 0;
+	border:1px solid gray;
+	background:white;
+	opacity:0.9;
+}
+.mf-bt-top{
+	visibility:hidden;
+}
+
+/*固定按钮end*/
+
+/*头部导航栏begin*/
+	.m-fixed-navi a{
+		color:white;
+		text-decoration:none;
+	}
+	/*导航栏右侧begin*/
+		.m3-head-top-right{
+			font-size:15px;
+			float:right;
+		}
+		.m3-head-top-right > img{
+			vertical-align:middle;
+			width:13px;
+			height:22px;
+			margin-right:3px;
+		}
+		#kehuduan{
+			font-family:微软雅黑, "Microsoft YaHei";
+			font-size:14px;
+			margin-right:15px;
+		}
+		#BOX{
+			display:inline;
+			position:relative;
+		}
+		#BOX:hover .outBox{
+			display:block;
+		}
+		.outBox:hover{
+			display:block;
+		}
+		.outBox{
+			width:200px;
+			height:200px;
+			position:absolute;
+			z-index:1;
+			background:white;
+			border-radius:3px;
+			top:23px;
+			left:-75px;
+			border:1px gray solid;
+			display:none;
+		}
+		.outBox div{
+			border:1px gray solid;
+			border-right:none;
+			border-bottom:none;
+			width:10px;
+			height:10px;
+			top:-6px;
+			left:45%;
+			display:inherit;
+			background:white;
+			position:absolute;
+			transform: rotate(45deg);
+			-ms-transform: rotate(45deg);		/* IE 9 */
+			-webkit-transform: rotate(45deg);	/* Safari and Chrome */
+			-o-transform: rotate(45deg);		/* Opera */
+			-moz-transform: rotate(45deg);
+		}
+		#search-text{
+			width:220px;
+			height:26px;
+			padding:0;
+			margin:0;
+			outline-color:green;
+		}
+		.search{
+			display: inline-block;
+			background:green;
+			vertical-align: middle;
+		    width: 36px;
+		    height: 30px;
+		    margin-right: 10px;
+		    margin-left:-5px;
+		}
+	/*导航栏右侧end*/
+	/*导航栏底部begin*/
+		.m3-head-ul{
+			float:left;
+			position:relative;
+			margin:0;
+			padding:0;
+			top:30px;
+		}
+		.m3-head-ul li{
+			display:inline;
+			margin:0 15px 0 10px;
+		}
+		.m2-head-bottom .m3-head-ul li a{
+			color:black;
+			text-decoration:none;
+		}
+		.m3-head-ul li a:hover{
+			color:#55b829;
+		}
+		.m3-head-ul li span{
+			padding:0 6px;
+			margin-left:7px;
+			background-color:#ff1919;
+			border-radius:3px;
+			font-size:11px;
+			color:white;
+		}
+	/*导航栏底部end*/
+	span.m3-moreclass{
+		float:right;
+		display:block;
+		position:relative;
+		top:30px;
+		font-size:14px;
+	}
+/*头部导航栏end*/
+
+/*幻灯片+选项begin*/
+	.m2-menu ul{
+		width:130px;
+	}
+	.m2-menu li{
+		color:white;
+		line-height:42px;
+	}
+	.m2-menu1, .m2-menu2{
+		font-family:微软雅黑, "Microsoft YaHei"
+		font-size:16px;
+		padding:0;
+		margin:0;
+		position:absolute;
+		left:70px;
+	}
+	.m2-menu2{
+		position:relative;
+	}
+	.menu2-mask{
+		background-color:black;
+		/*opacity:0.85;*/
+		height:170px;
+		width:100%;
+		position:absolute;
+		top:335px;
+		left:-100%;
+	}
+	.menu2-mask:hover{
+		left:0px;
+	}
+	.m2-pic-div{
+		text-align:center;
+		position:relative;
+		width:860px;
+	}
+	.m2-pic-div:hover .m2-pic-button-left,.m2-pic-div:hover .m2-pic-button-right{
+		visibility:visible;
+	}
+	.m2-pic-button-left, .m2-pic-button-right{
+		line-height: 50px;
+		cursor:pointer;
+		color:white;
+		position:absolute;
+		border-radius:50%;
+		width:50px;
+		height:50px;
+		top:175px;
+		background-color:black;
+		opacity:0.85;
+		visibility:hidden;
+	}
+	.m2-pic-button-left:hover, .m2-pic-button-right:hover{
+		opacity:0.9;
+	}
+	.m2-pic-button-left{
+		left:30px;
+	}
+	.m2-pic-button-right{
+		right:30px;
+	}
+	.m2-pic-button-bottom{
+		position:absolute;
+		bottom:20px;
+		right:350px;
+	}
+	.mpbb{
+		border-radius:50%;
+		width:15px;
+		height:15px;
+		background:white;
+		opacity:0.85;
+		float:left;
+		margin:0 8px;
+	}
+	#m2-pic-a{
+		display:block;
+	}
+	.m2-pic-img{
+		width:860px;
+		height:380px;
+	}
+/*幻灯片+选项end*/
+
+/*固定登录begin*/
+	.pic-fix-login{
+		position:absolute;
+		top:45px;
+		right:3px;
+		height:280px;
+		width:200px;
+		background-color:white;
+		text-align:center;
+	}
+	.pic-fix-login p{
+		padding:1px 25px;
+	}
+	.pic-fix-login img{
+		margin:10px 0 25px 0;
+		width:83px;
+		height:83px;
+	}
+	.pic-fix-login a{
+		margin:0 auto;
+		display:block;
+		width:160px;
+		height:36px;
+		line-height:36px;
+		text-decoration:none;
+		color:white;
+		background-color:#56b929;
+		margin-bottom: 10px
+	}
+	.pic-fix-login span{
+
+		font-size:12px;
+	}
+/*固定登录end*/
+
+/*合作学校begin*/
+	.m-school a{
+		display:inline-block;
+		margin:0 50px 0 40px;
+		text-decoration:none;
+		color:#55b929;
+	}
+	.m-school img{
+		vertical-align:middle;
+		width:110px;
+		height:31px;
+		margin:0 40px;
+	}
+/*合作学校end*/
+
+/*推荐课程begin*/
+	.rec-class{
+		/*overflow:hidden;*/
+		height:270px;
+		width:236px;
+		float:left;
+		margin-right:13px;
+		background-color:white;
+	}
+	.rec-class:hover{
+		box-shadow:rgba(0, 0, 0, 0.3) 0px 2px 8px;
+	}
+	.rec-class:hover img{
+		height:149px;
+		width:259px;
+	}
+
+	.rec-class-img{
+		transition: width 0.5s, height 0.5s;
+		-moz-transition: width 0.5s, height 0.5s;	/* Firefox 4 */
+		-webkit-transition: width 0.5s, height 0.5s;	/* Safari 和 Chrome */
+		-o-transition: width 0.5s, height 0.5s;	/* Opera */
+		height:136px;
+		width:236px;
+	}
+	div.rec-class-img{
+		overflow:hidden;
+	}
+	.rec-class-name{
+		margin:10px;
+		font-family:微软雅黑, "Microsoft YaHei";
+		font-size:14px;
+		line-height:24px;
+		color:rgb(17,17,17);
+		padding:0;
+		margin:0;
+	}
+	.rec-class-going, .rec-class-over{
+		font-size: 12px;
+		font-family:微软雅黑, "Microsoft YaHei";
+		color:green;
+		padding:0;
+		margin:0;
+		display:block;
+	}
+	.rec-class-over{
+		color:gray;
+	}
+	.rec-class-school{
+		float:left;
+		font-size:13px;
+		margin:10px 0;
+	}
+	.rec-class-num{
+		float:right;
+		font-size:13px;
+		margin:10px 0;
+	}
+	.rec-class-info{
+		display:block;
+		clear:both;
+	}
+/*推荐课程end*/

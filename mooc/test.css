@@ -1,0 +1,251 @@
+﻿* {
+	font-family:Arial, 微软雅黑, "Microsoft YaHei";
+}
+/*登录|注册按钮begin*/
+.loginbt {
+    color: black;
+    text-decoration: none;
+}
+
+    .loginbt:hover {
+        color: green;
+    }
+
+    .loginbt > span {
+        color: black;
+    }
+/*登录|注册按钮end*/
+
+/*登录界面begin*/
+#mask{
+	display:none;
+	background-color:gray;color:#bcbcbc;
+	opacity:0.75;
+	width:100%;
+	height:100%;
+	position:fixed;
+    z-index:3;
+    top:0;
+}
+.login {
+    z-index:4;
+    width:658px;
+    min-height:363px;
+    position:fixed;
+    top:115px;
+    left:333px;
+	border:1px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius:6px 6px 6px 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    display:none;
+}
+.login > div {
+    border-width:1px;
+    border-color:gray;
+}
+/*登录界面end*/
+
+
+/*第三方账号登录begin*/
+#be{
+    float:right;
+    width:200px;
+    min-height:360px;
+    text-align:center;
+}
+#be > a{
+    float:right;
+    display:block;
+    width:20px;
+    height:20px;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+}
+#be > a:hover{
+
+    color:green;
+    background-color:#ddd;
+    border-radius:0 6px 0 0;
+}
+#be > p{
+    margin:10px auto;
+    width:65px;
+    height:65px;
+    border-style:solid;
+    border-width:1px;
+    border-color:darkgray;
+    border-radius:50%;
+    text-align:center;
+    line-height:65px;
+    cursor:pointer;
+    font-size:65px;
+    overflow:hidden;
+}
+#be > p:hover{
+    background-color:gray;
+    font-size:66px;
+}
+/*第三方账号登录end*/
+
+/*选项卡begin*/
+#menu {
+    border-bottom-style:solid;
+    border-right-style:solid;
+    /*text-align:center;*/
+    float:left;
+    width:450px;
+    height:90px;
+}
+#menu > div {
+    border-width:3px;
+    border-color:green;
+    cursor:pointer;
+    line-height:87px;
+    
+}
+#tab1{
+    float:left;
+    margin-left:20px;
+}
+#tab2{
+    float:right;
+    margin-right:20px;
+}
+.tb-active{
+    border-bottom-style:solid;
+    color:green;
+}
+/*选项卡end*/
+
+
+/*表单begin*/
+#fom{
+	float:left;
+    border-right-style:solid;
+    min-height:330px;
+    width:450px
+}
+#fom1, #fom2{
+    background-color:white;
+    text-align:center;
+    width:99%;
+    display:none;
+}
+#fom1{
+    display:block;
+    
+}
+/*表单end*/
+#fom1-icon{
+    background-image:url("./img/icon.png");
+    width:150px;
+    height:25px;
+    background-position:-16px -28px;
+    margin:30px auto;
+}
+#fom1-uname, #fom1-pwd{
+
+    margin:0 auto;
+    width:320px;
+    height:46px;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+}
+/* IE输入框后面的X去掉*/
+input::-ms-clear, ::-ms-reveal{
+	display:none;
+}
+
+#fom1-uname-icon, #fom1-pwd-icon{
+    background-image:url("./img/icon.png");
+    float:left;
+    margin:10px;
+    width:22px;
+    height:24px;
+    background-position:-251px -86px;
+}
+#fom1-uname>input, #fom1-pwd>input{
+    padding: 0;
+    height:45px;
+    width:233px;
+    float:left;
+    display:block;
+}
+#fom1-uname-clear, #fom1-pwd-clear{
+    margin:12px;
+    float:left;
+    width:20px;
+    height:20px;
+    background-image:url("./img/icon.png");
+    background-position:-147px -89px;
+    display:none;
+}
+.input-text{
+    position:relative;
+    
+    height:22px;
+    border-style:none;
+    width:166px;
+}
+.input-text:focus{
+    outline:none;
+}
+
+#fom1 .submit{
+    cursor:pointer; 
+    margin:0px auto;
+    padding:0;
+    background-color:#ddd;
+    border-style:none;
+    outline:none;
+    width:320px;
+    height:44px;
+    font-size:18px;
+    color:white;
+}
+#fom1 .submit:hover{
+    background-color:#6cd07e
+}
+#fom1-items{
+    width:70%;
+    margin:0 auto;
+    padding:10px;
+}
+#fom1-items input{
+    width:15px;
+    height:15px;
+    float:left;
+    margin:5px auto;
+   
+}
+#fom1-items a{
+    color:gray;
+    text-decoration:none;
+    font-size:13px;
+}
+#fom1-items a:hover{
+    font-size:14px;
+}
+#fom2 input{
+    height:43px;
+    width:360px;
+    margin:10px 0;
+    outline:none;
+    padding:0;
+    background-color: #e5dfdf;
+    border-style:none;
+    color:gray;
+}
+#fom2 input[type="submit"]{
+	border-style:none;
+	border-radius: 5px;
+	background-color:#69b1f8;
+	font-size:20px;
+	color:white;
+}
+#fom2 input[type="submit"]:hover{
+	background-color:#2f93f5;
+}
